@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details 标签测试</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #0d1117;
+            color: #e6edf3;
+        }
+        details {
+            margin: 16px 0;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            background: #161b22;
+        }
+        summary {
+            padding: 12px 16px;
+            cursor: pointer;
+            font-weight: 600;
+            background: #21262d;
+            border-radius: 8px 8px 0 0;
+        }
+        summary:hover {
+            background: #30363d;
+        }
+        details[open] summary {
+            border-radius: 8px 8px 0 0;
+        }
+        .details-content {
+            padding: 16px;
+        }
+        pre {
+            background: #1a1e23;
+            padding: 16px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        code {
+            background: #21262d;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #79c0ff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Details 标签测试页面</h1>
+    
+    <details>
+        <summary>1. 第一个折叠块</summary>
+        <div class="details-content">
+            <p>这是第一个折叠块的内容。</p>
+            <pre><code>echo "Hello World"</code></pre>
+        </div>
+    </details>
+    
+    <details>
+        <summary>2. 第二个折叠块</summary>
+        <div class="details-content">
+            <p>这是第二个折叠块的内容。</p>
+            <pre><code>ls -la</code></pre>
+        </div>
+    </details>
+    
+    <details>
+        <summary>3. 第三个折叠块</summary>
+        <div class="details-content">
+            <p>这是第三个折叠块的内容。</p>
+            <pre><code>cd /home/user</code></pre>
+        </div>
+    </details>
+    
+    <details>
+        <summary>4. 第四个折叠块</summary>
+        <div class="details-content">
+            <p>这是第四个折叠块的内容。</p>
+            <pre><code>sudo systemctl status nginx</code></pre>
+        </div>
+    </details>
+    
+</body>
+</html>
